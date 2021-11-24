@@ -34,6 +34,26 @@ const generateMarkdown = (data)=>{
   ${data.license}
 
   ## Table of Contents
+  * [Installation](#installation)
+  * [Usage](#usage)
+  * [Contributing](#contributing)
+  * [Tests](#tests)
+  * [License](#license)
+
+
+  ## Installation
+
+  ## Usage
+
+  ## Contributing
+
+  ## Tests
+
+  ## License
+
+
+
+
 
 
 

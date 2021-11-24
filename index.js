@@ -1,7 +1,22 @@
 // TODO: Include packages needed for this application
-const inquirer = require('inquirer')
-const generateMarkdown = require('./utils/generateMarkdown.js')
-const fs = require('fs')
+const fs = require('fs');
+const inquirer = require('inquirer');
+const chalk = require('chalk');
+const generateMarkdown = require('./utils/generateMarkdown.js');
+
+
+// Welcome message
+const hello = [
+    {
+        type: 'confirm',
+        name: 'hello',
+        message: chalk.blueBright(`Welcome to the README.md generator! Answer the ensuing questions to render your customized README. Lets start! Press 'y' or enter. `)
+
+    }
+]
+
+// Success message
+const success = chalk.greenBright(`README has been generated! See output folder.`);
 
 
 // TODO: Create an array of questions for user input
@@ -31,21 +46,33 @@ const questions = [
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
     fs.writeFile(fileName, data, (err) =>
-    err ? console.log(err) : console.log('Successfully created README.md')
+    err ? console.log(err) : console.log(success)
   );
 }
 
 // TODO: Create a function to initialize app
-function init() {
-    inquirer.prompt(questions)
-    
-    .then((answers)=>{
-        const readmeAnswers = generateMarkdown(answers);
-        console.log(readmeAnswers)
-        writeToFile('./output/README.md', readmeAnswers)
+const init = async () => {
+    try {
+        await inquirer.prompt(hello);
+        const userData = await inquirer.prompt(questions);
+        writeToFile('./output/README.md', generateMarkdown(userData));
+        // console.log(success, userData);
+    } catch (err) {
+        console.log(err);
+    }
 
-    })
 }
+
+// function init() {
+//     inquirer.prompt(questions)
+    
+//     .then((answers)=>{
+//         const readmeAnswers = generateMarkdown(answers);
+//         console.log(readmeAnswers)
+//         writeToFile('./output/README.md', readmeAnswers)
+
+//     })
+// }
 
 // Function call to initialize app
 init();
