@@ -26,6 +26,16 @@ function renderLicenseSection(license) {}
 const generateMarkdown = (data)=>{
   return `# ${data.project}
   ${renderLicenseBadge(data.license)}
+  
+  ## Description 
+  ${data.description}
+  
+  ## License
+  ${data.license}
+
+  ## Table of Contents
+
+
 
   `;
 }

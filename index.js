@@ -11,6 +11,12 @@ const questions = [
         name: 'project',
         message: 'What is the name of your project?',
     },
+
+    {
+        type: 'input',
+        name: 'description',
+        message: 'Give a description of your project.'
+    },
     {
         type: 'list',
         name: 'license',
