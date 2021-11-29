@@ -37,8 +37,13 @@ const questions = [
         name: 'license',
         message: 'Which license would you like for your README file?',
         choices: [
-            'MIT', 'Apache'
+            'MIT', 'Apache', 'Mozilla Public 2.0', 'IBM Public 1.0', 'GNU GPL v3', 'ISC'
         ]
+    },
+    {
+        type: 'input',
+        name: 'username',
+        message: 'What is your Github username?'
     }
 
 ];
@@ -56,7 +61,6 @@ const init = async () => {
         await inquirer.prompt(hello);
         const userData = await inquirer.prompt(questions);
         writeToFile('./output/README.md', generateMarkdown(userData));
-        // console.log(success, userData);
     } catch (err) {
         console.log(err);
     }
