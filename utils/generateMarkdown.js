@@ -69,7 +69,11 @@ const generateMarkdown = (data)=>{
 
   For any questions or concerns, please contact me via the information provided below:
 
-  Github: 
+  Github: ${data.username}
+
+  Or
+
+  Email: ${data.email}
   
   
 
