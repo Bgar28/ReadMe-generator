@@ -30,7 +30,7 @@ const questions = [
     {
         type: 'input',
         name: 'description',
-        message: 'Give a description of your project.'
+        message: 'Give a detailed description of your project.'
     },
     {
         type: 'list',
@@ -39,6 +39,26 @@ const questions = [
         choices: [
             'MIT', 'Apache', 'Mozilla Public 2.0', 'IBM Public 1.0', 'GNU GPL v3', 'ISC'
         ]
+    },
+    {
+        type: 'input',
+        name: 'install',
+        message: 'If applicable, explain the process of how to install your project step-by-step.'
+    },
+    {
+        type: 'input',
+        name: 'usage',
+        message: 'If applicable, give examples of your project in use.'
+    },
+    {
+        type: 'input',
+        name: 'contribution',
+        message: 'If applicable, give a user guidelines on how to contribute to your project.'
+    },
+    {
+        type: 'input',
+        name: 'test',
+        message: 'If applicable, provide tests for your project and explain how the testing is done.'
     },
     {
         type: 'input',
