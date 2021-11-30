@@ -32,7 +32,6 @@ function renderLicenseSection(license) {}
 // }
 
 const generateMarkdown = (data)=>{
-// let tableOfContents = `## Table of Contents`
 
   return `# ${data.project}
   ${renderLicenseBadge(data.license)}
@@ -54,14 +53,20 @@ const generateMarkdown = (data)=>{
   
   ## Installation
 
-  
+  ${data.install}
 
   
   ## Usage
+
+  ${data.usage}
   
   ## Contributing
+
+  ${data.contribution}
   
   ## Tests
+
+  ${data.test}
   
   ## License
   
@@ -71,7 +76,9 @@ const generateMarkdown = (data)=>{
 
   For any questions or concerns, please contact me via the information provided below:
 
-  Github: ${data.username}
+  Github: ${data.username} 
+  https://github.com/${data.username}/
+
 
   Or
 
