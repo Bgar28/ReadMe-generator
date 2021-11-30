@@ -39,7 +39,7 @@ const questions = [
         name: 'license',
         message: 'Which license would you like for your README file?',
         choices: [
-            'MIT', 'Apache', 'Mozilla Public 2.0', 'IBM Public 1.0', 'GNU GPL v3', 'ISC'
+            'MIT', 'Apache', 'Mozilla Public 2.0', 'IBM Public 1.0', 'GNU GPL v3', 'ISC', 'none'
         ]
     },
     {
