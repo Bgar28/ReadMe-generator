@@ -22,17 +22,17 @@ function renderLicenseBadge(license) {
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
   if(license === 'MIT') {
-    return 'MIT <br> For more information, visit: https://opensource.org/licenses/MIT'
+    return '<br/> For more information, visit: https://opensource.org/licenses/MIT'
   } else if(license === 'Apache') {
-    return 'Apache <br> For more information, visit: https://opensource.org/licenses/Apache-2.0'
+    return '<br/> For more information, visit: https://opensource.org/licenses/Apache-2.0'
   }else if(license === 'Mozilla Public 2.0') {
-    return 'Mozilla Public 2.0 <br> For more information, visit: https://opensource.org/licenses/MPL-2.0'
+    return '<br/> For more information, visit: https://opensource.org/licenses/MPL-2.0'
   }else if(license === 'IBM Public 2.0') {
-    return 'IBM Public 2.0 <br> For more information, visit: https://opensource.org/licenses/IPL-1.0'
+    return '<br/> For more information, visit: https://opensource.org/licenses/IPL-1.0'
   }else if(license === 'GNU GPL v3') {
-    return 'GUN GPL v3 <br> For more information, visit: https://opensource.org/licenses/GPL-3.0'
+    return '<br/> For more information, visit: https://opensource.org/licenses/GPL-3.0'
   }else if(license === 'ISC') {
-    return 'ISC <br> For more information, visit: https://opensource.org/licenses/ISC'
+    return '<br/> For more information, visit: https://opensource.org/licenses/ISC'
   }else if(license === 'none') {
     return ''
   }
@@ -40,14 +40,13 @@ function renderLicenseLink(license) {
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(license) {}
-
-// TODO: Create a function to generate markdown for README
-// function generateMarkdown(data) {
-//  
-
-// `;
-// }
+function renderLicenseSection(license) {
+  if(license === 'none') {
+    return ''
+  } else {
+    return 'License'
+  }
+}
 
 const generateMarkdown = (data)=>{
   return `# ${data.project}
@@ -57,20 +56,17 @@ const generateMarkdown = (data)=>{
   
   ${data.description}
   
-  
   ## Table of Contents
   * [Installation](#installation)
   * [Usage](#usage)
   * [Contributing](#contributing)
   * [Tests](#tests)
-  * [License](#license)
-  
-  
+  * [${renderLicenseSection(data.license)}](#${renderLicenseSection(data.license)})
+   
   ## Installation
 
   ${data.install}
 
-  
   ## Usage
 
   ${data.usage}
@@ -83,28 +79,19 @@ const generateMarkdown = (data)=>{
 
   ${data.test}
   
-  ## License
-  
+  ## ${renderLicenseSection(data.license)}
+  ${renderLicenseBadge(data.license)}
   ${renderLicenseLink(data.license)}
 
   ## Questions?
 
   Any questions or concerns, please contact me via the information provided below:
 
-  Github: ${data.username} 
-  https://github.com/${data.username}/
-
+  Github: ${data.username} <br/> https://github.com/${data.username}/
 
   Or
 
   Email: ${data.email}
-  
-  
-
-
-
-
-
   `;
 }
 
