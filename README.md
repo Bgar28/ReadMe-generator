@@ -26,7 +26,9 @@
   ## Usage
 
   This application utilizes ES6 and its features of promises, "const" variables, and arrow functions. The chalk module is utilized to style terminal output. The inquirer package is utilized to capture user input. Lastly, fs.WriteFile is utilized to generate one's README. <br/>
-  
+  ![screenshot](https://github.com/Bgar28/ReadMe-generator/blob/main/Screenshotexample1.png) <br/>
+  ![screenshot](https://github.com/Bgar28/ReadMe-generator/blob/main/Screenshotexample2.png) <br/>
+  ![screenshot](https://github.com/Bgar28/ReadMe-generator/blob/main/Screenshotexample3.png)
 
   ## License
   ![License: JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
