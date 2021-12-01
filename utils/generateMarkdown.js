@@ -89,6 +89,7 @@ const generateMarkdown = (data)=>{
   Any questions or concerns, please contact me via the information provided below:
 
   Github: ${data.username} <br/> https://github.com/${data.username}/
+  ![License: Github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)
 
   Or
 
