@@ -1,7 +1,7 @@
 # README.md Generator
-  ![License: JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
-  ![License: Node](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
-  ![License: Markdown](https://img.shields.io/badge/Markdown-000000?style=for-the-badge&logo=markdown&logoColor=white)
+  ![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
+  ![Node](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
+  ![Markdown](https://img.shields.io/badge/Markdown-000000?style=for-the-badge&logo=markdown&logoColor=white)
   
   
   ## Description 
@@ -25,15 +25,15 @@
   
   ## Usage
 
-  This application utilizes ES6 and its features of promises, "const" variables, and arrow functions. The chalk module is utilized to style terminal output. The inquirer package is utilized to capture user input. Lastly, fs.WriteFile is utilized to generate one's README. <br/>
+  This application utilizes ES6 and its features of promises, "const" variables, and arrow functions. The chalk module is utilized to style terminal output. The inquirer package is utilized to capture user input.The generateMarkdown.js file is utilized to generate one's README.md. Lastly, the fs.writeFile method is utilized to write the markdown and puts it into the specified file path. <br/>
   ![screenshot](https://github.com/Bgar28/ReadMe-generator/blob/main/Screenshotexample1.png) <br/>
   ![screenshot](https://github.com/Bgar28/ReadMe-generator/blob/main/Screenshotexample2.png) <br/>
   ![screenshot](https://github.com/Bgar28/ReadMe-generator/blob/main/Screenshotexample3.png)
 
   ## License
-  ![License: JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
-  ![License: Node](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
-  ![License: Markdown](https://img.shields.io/badge/Markdown-000000?style=for-the-badge&logo=markdown&logoColor=white)
+  ![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
+  ![Node](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
+  ![Markdown](https://img.shields.io/badge/Markdown-000000?style=for-the-badge&logo=markdown&logoColor=white)
   
   
 
@@ -42,9 +42,9 @@
   Any questions or concerns, please contact me via the information provided below:
 
   Github: Bgar28 <br/> https://github.com/Bgar28/ <br/>
-  ![License: Github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)
+  ![Github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)
 
   Or
 
   Email: briangarlandk@gmail.com <br/>
-  ![License: GMAIL](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)
+  ![GMAIL](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)
