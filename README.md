@@ -21,7 +21,8 @@
   To start the application, open the terminal and enter "node index.js" in the command line. <br/>
   You are welcomed with a prompt and must hit enter or type "y" to move forward. <br/>
   You are then given a series of prompts that will determine what is including within your README. <br/>
-  After all prompts are answered, your README is generated and accessible via the output folder and a success message is displayed in the terminal. 
+  After all prompts are answered, your README is generated and accessible via the output folder and a success message is displayed in the terminal. <br/>
+  For a video walk-thru demonstration, click the link: https://drive.google.com/file/d/1S_QAcnWW7AyFaV4DyS6m84FVG_6h9Rpu/view?usp=sharing
   
   ## Usage
 
